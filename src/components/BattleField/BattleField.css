@@ -1,0 +1,32 @@
+.field-header {
+  grid-area: hd;
+  display: flex;
+  justify-content: space-between;
+}
+.field-content {
+  grid-area: fc;
+}
+.field-title-item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar {
+  grid-area: sd;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(11, 51px);
+  grid-auto-rows: minmax(51px, auto);
+  grid-template-areas:
+    '--  hd hd hd hd hd hd hd hd hd hd'
+    'sd fc fc fc fc fc fc fc fc fc fc';
+}

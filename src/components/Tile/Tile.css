@@ -1,0 +1,19 @@
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c5c5c5;
+  font-size: 35px;
+}
+
+.tile-active {
+  background-color: #bff1ff;
+}
+
+.tile-active:hover {
+  cursor: pointer;
+}
+
+.shot {
+  background-color: red;
+}
